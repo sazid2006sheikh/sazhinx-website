@@ -1,0 +1,161 @@
+.testimonials-main {
+    width: 95%;
+    height: 700px;
+    margin: 0 auto;
+    /* background: #1f2837; */
+    background: #1a212d;
+    padding: 4rem 4rem 8rem;
+    border-top-right-radius: 15mm;
+    border-top-left-radius: 15mm;
+    overflow: hidden;
+}
+
+/* ---------------------------------------------- */
+
+/* ratings */
+.rating-box {
+    display: flex;
+    gap: 4px;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: #444;
+    transition: color 0.3s ease;
+}
+
+.star.filled {
+    color: gold;
+}
+
+/* ---------------------------------------------- */
+
+
+/* Heading */
+.testimonials-main .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.heading {
+    font-family: "Exo 2", sans-serif;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.carousel-effect {
+    margin-right: 5rem;
+}
+
+.carousel-effect button {
+    position: relative;
+    z-index: 1;
+    padding: 0.7rem 1.5rem;
+    border: 0.1mm solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 5mm;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-effect button:disabled {
+    opacity: 0.3;
+}
+
+.carousel-effect button::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5);
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0.5;
+    border-radius: 5mm;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-effect button:hover::before {
+    opacity: 0.9;
+}
+
+.testimonial-cards {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-cards .image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 0.3rem;
+    transition: scale 0.5s ease, opacity 0.3s ease;
+    box-shadow: 0 0 2mm #fff;
+}
+
+.testimonial-cards .image img {
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    align-items: flex-start;
+}
+
+.card.previous .image {
+    scale: 0.75;
+    opacity: 0.6;
+}
+
+.card .reviews {
+    display: none;
+    width: 400px;
+    height: 250px;
+    margin-left: 4rem;
+    margin-right: 1.5rem;
+    padding: 2rem 1rem;
+    color: #fff;
+    border: 0.3mm solid #414e5c;
+    border-radius: 12px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease;
+    will-change: transform;
+}
+
+.card.active .reviews {
+    display: block;
+}
+
+.reviews h3 {
+    line-height: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.reviews h3 span {
+    color: #b30d0d;
+    font-size: 0.65rem;
+}
+
+.reviews p {
+    padding-top: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 1.5rem;
+}
+
+.rating-area {
+    padding-top: 0.5rem;
+}

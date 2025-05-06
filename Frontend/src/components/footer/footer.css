@@ -1,0 +1,197 @@
+.footer {
+  position: relative;
+  width: 100%;
+  max-height: 900px;
+  height: 800px;
+  overflow: hidden;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(14, 10, 24, 1) 24%, rgba(43, 26, 81, 1) 100%);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 12rem 0 5rem;
+}
+
+.content {
+  padding: 1rem;
+  height: 270px;
+}
+
+.footer-content .content p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-content .social-links-container {
+  display: flex;
+  flex-direction: column;
+  height: 270px;
+  gap: 2.5rem;
+  padding: 0 1rem;
+  border: 0.1mm solid #ffffff20;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-content .social-links-container p {
+  font-size: 1.25rem;
+  color: #fff;
+  padding-top: 1.5rem;
+}
+
+.footer-bottom-brand-name {
+  width: 100%;
+  position: absolute;
+  bottom: -12%;
+  /* adjust if needed */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.footer-bottom-brand-name h1 {
+  color: #fff;
+  font-size: 18rem;
+  font-family: "Exo 2", sans-serif;
+}
+
+/* Form section of footer */
+.sign-in-container {
+  display: flex;
+  padding-top: 4rem;
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+.form-wrapper .btn-Wrapper {
+  position: absolute;
+  top: 2.7px;
+  right: 2px;
+}
+
+.form-wrapper input {
+  padding: 1rem;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-radius: 5mm;
+  background-color: rgba(157, 157, 157, 0.5);
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.form-wrapper input::placeholder {
+  color: #e2e2e2;
+  font-size: 15px;
+}
+
+.footer-content .about-us {
+  padding: 2rem;
+  height: 270px;
+}
+
+.footer-content .about-us .head {
+  color: #fff;
+  padding-bottom: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-content .about-us .address p {
+  color: #ffffffb5;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.25rem 0;
+}
+
+.copyright-cont {
+  padding-left: 5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.copyright-cont .copyright {
+  color: #F2963A;
+  padding-top: 2rem;
+  line-height: 1.2rem;
+  font-size: 12px;
+}
+
+.payment-mode {
+  position: absolute;
+  bottom: 35%;
+  right: 0;
+  padding: 3rem 1.5rem 0;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  width: 300px;
+  font-size: 1.4rem;
+}
+
+.brand-logo {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+
+/* -----------------------animations----------------------- */
+
+/* animation for cards inside footers */
+.footer-content,
+.copyright-cont,
+.payment-mode {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.footer-content.move-upward,
+.copyright-cont.move-upward,
+.payment-mode.move-upward {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* animation of footer brand name */
+.footer-bottom-brand-name h1 {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.footer-bottom-brand-name.animate h1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer-bottom-brand-name.animate h1:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.footer-bottom-brand-name.animate h1:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.footer-bottom-brand-name.animate h1:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.footer-bottom-brand-name.animate h1:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.footer-bottom-brand-name.animate h1:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.footer-bottom-brand-name.animate h1:nth-child(6) {
+  transition-delay: 0.5s;
+}
+
+.footer-bottom-brand-name.animate h1:nth-child(7) {
+  transition-delay: 0.6s;
+}

@@ -1,0 +1,469 @@
+/* --------------------------global-------------------------- */
+.product-main {
+    width: 100%;
+    padding: 2rem 0 8rem 0;
+    background: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-category .head,
+.all-products .head,
+.videos-section .head {
+    justify-self: center;
+    width: fit-content;
+    font-family: "Exo 2", sans-serif;
+}
+
+/* style for h1 of top both container */
+.shop-category .head h1,
+.all-products .head h1,
+.videos-section .head h1 {
+    font-size: 3rem;
+    padding: 0 0 3.5rem 0;
+}
+
+.shop-category .head h1 {
+    padding-top: 3rem;
+}
+
+.all-products .head h1 {
+    padding-top: 8rem;
+}
+
+.videos-section .head h1 {
+    padding-top: 8rem;
+}
+
+/* style for product-grid, product-list, video-section container */
+.product-grid-wrapper,
+.product-list-wrapper,
+.videos-section {
+    position: relative;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+/* product price style */
+.product-list .price,
+.video-details .product-detail .price {
+    width: 100%;
+    height: 5%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 0.75rem;
+    font-weight: bold;
+}
+
+.product-list .price .previous-price,
+.video-details .product-detail .price {
+    text-decoration: line-through;
+    color: #b3b3b3;
+}
+
+.product-list .price .new-price,
+.video-details .product-detail .price {
+    color: red;
+}
+
+/* --------------------------global-end-------------------------- */
+
+
+/* Scrollable container */
+.product-grid {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* product card style */
+.product-grid .product {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border-radius: 3mm;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+/* product image style */
+.product img {
+    width: 400px;
+    height: 450px;
+    transition: transform 0.2s ease;
+}
+
+/* product name style */
+.product .product-name {
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+}
+
+.product-name .chevron-right {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 1.5rem;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.product:hover .product-name .chevron-right {
+    display: flex;
+}
+
+.product:hover img {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.product:hover {
+    cursor: pointer;
+}
+
+/* scroll button */
+.product-mover {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: none;
+    justify-content: space-between;
+    padding: 0 2.3rem;
+    pointer-events: none;
+    z-index: 5;
+}
+
+/* visibility for buttons  */
+.product-grid-wrapper:hover .product-mover {
+    display: flex;
+}
+
+/* button style */
+.product-mover button {
+    font-size: 25px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 0.4rem 0.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    pointer-events: auto;
+    transition: opacity 0.1s ease;
+}
+
+/* visitable and unvisitable on start and end position  */
+.product-mover button:disabled {
+    opacity: 0;
+}
+
+/*---------------------------- all products ---------------------------- */
+
+.all-products {
+    position: relative;
+}
+
+/* product-container */
+.product-list-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    overflow: scroll hidden;
+}
+
+.product-list-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* product cards */
+.product-list {
+    flex-shrink: 0;
+    height: 500px;
+    width: 350px;
+    background: #fff;
+    border-radius: 3mm;
+    padding: 1.5rem 2rem 0.7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.product-list:hover {
+    box-shadow: 0 0 12px #bfbfbfbf;
+}
+
+/* top image style */
+.product-list .image {
+    overflow: hidden;
+    border-radius: 2mm;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    position: relative;
+    transition: display 2s ease;
+}
+
+/* top image style */
+.product-list .image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* add-button */
+.product-list .add-btn {
+    position: absolute;
+    top: -45%;
+    right: -5%;
+    border: unset;
+    background: unset;
+    color: red;
+    font-size: 1.2rem;
+}
+
+/* product description  style*/
+.product-list .content {
+    position: relative;
+    width: 100%;
+    height: 5%;
+    font-weight: bold;
+}
+
+/* 3 images container */
+.product-list .multi-image {
+    margin: 0 auto;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    padding: 0 0.1rem;
+    overflow: hidden;
+}
+
+.product-list .multi-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* small cards image */
+.multi-image .view-option {
+    border-radius: 1.2mm;
+    height: 100%;
+    width: 30%;
+    background: #fff;
+    margin: 0 0.3rem;
+    border-radius: 2mm;
+    overflow: hidden;
+}
+
+/* cart button */
+.cart {
+    width: 100%;
+}
+
+.cart button {
+    width: 100%;
+    padding: 0.4rem 0;
+    border: unset;
+    font-weight: bold;
+    color: red;
+    border-radius: 3mm;
+}
+
+.cart button:hover {
+    background: #b3b3b3;
+}
+
+/* view all products button style */
+/* .view-all-products {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 5%;
+    border: unset;
+    background: #1c1c1c;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5mm;
+} */
+
+/*---------------------------- Videos ---------------------------- */
+
+/* video card */
+.video-wrapper {
+    padding: 0 2rem;
+    display: flex;
+    gap: 1.5rem;
+    overflow: scroll hidden;
+}
+
+.video-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.video-card {
+    flex-shrink: 0;
+    height: 270px;
+    width: 260px;
+    border-radius: 3mm;
+    overflow: hidden;
+    box-shadow: 0 1px 16px #00000037;
+    background: #fff;
+}
+
+.video-card .video {
+    height: 146.13px;
+    width: 100%;
+    position: relative;
+}
+
+.video-card .video video {
+    width: 100%;
+    height: 100%;
+}
+
+.video .discount {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    z-index: 1;
+}
+
+.video .discount button {
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0 100%, 0 0);
+    padding: 0.2rem 0.75rem;
+    border: unset;
+    border-radius: 1mm;
+    background: red;
+    color: #fff;
+}
+
+.video .video-play-btn {
+    background: red;
+    border: unset;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: -3%;
+    right: 3%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.video .video-play-btn i {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.video-details .product-detail .item-detail {
+    padding: 1rem 1rem 0;
+    margin: 0;
+}
+
+/* -----------------------hover-video-box----------------------- */
+
+.overlay-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-container {
+    position: relative;
+    max-width: 800px;
+    width: 90%;
+    /* background: #fff; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.overlay-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+/* --------------------animation-------------------- */
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-right: 2px solid #fff; */
+    animation: typing 0.8s steps(25), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.products_ {
+    position: relative;
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+}
+
+.products_.pop-animation {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+
+.videos-section p{
+    font-size: 2.5rem;
+    text-align: center;
+    color: red;
+    border: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

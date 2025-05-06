@@ -1,0 +1,167 @@
+/* General Page Styling */
+.main-page {
+    height: 100vh;
+    width: 100vw;
+    background: #f1f1f1;
+    overflow: hidden scroll;
+    position: relative;
+}
+
+.main-page::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hero Section */
+.pod-herosection {
+    width: 100%;
+    padding: 5rem 3rem;
+}
+
+.pod-herosection .pod-herosection-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background: #a6a6a6;
+    border-radius: 4mm;
+    position: relative;
+    overflow: hidden;
+}
+
+.pod-herosection .pod-herosection-container h1 {
+    padding: 0 10rem;
+    font-size: 3rem;
+    z-index: 1;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.pod-herosection .pod-herosection-container img {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Pod Cards Container */
+.pod-cards-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    scroll-behavior: smooth;
+    padding-bottom: 5rem;
+}
+
+.pod-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem 4rem;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+}
+
+.pod-cards-container .pod-card {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background: #fff;
+}
+
+.pod-content .save-icon {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    color: red;
+}
+
+.pod-cards-container .pod-card .pod-content {
+    width: 100%;
+    height: 89%;
+}
+
+.pod-cards-container .pod-card .pod-content .pod-image {
+    height: 340px;
+    width: 100%;
+}
+
+.pod-card .pod-content .pod-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pod-cards-container .pod-card .pod-content .pod-details {
+    padding: 0.7rem 0.7rem 0 0.7rem;
+    height: 90px;
+}
+
+.pod-cards-container .pod-card .pod-buy-btn {
+    height: 48px;
+    width: 100%;
+    border: unset;
+    background: #c1c1c1;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+}
+
+.pod-cards-container .pod-card .pod-buy-btn:hover {
+    background: #777777;
+}
+
+/* Button Styling for Scroll */
+.scroll-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 5rem;
+
+}
+
+.scroll-btn {
+    background: #777777;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-btn:disabled {
+    background: #c1c1c1;
+}
+
+.scroll-btn:hover:not(:disabled) {
+    background-color: #777777;
+}
+
+
+/*  */
+
+.pod-herosection-container {
+    opacity: 0;
+    animation: podAnimate 0.3s forwards;
+}
+
+.pod-herosection h1 {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: podAnimate 1s forwards 0.2s;
+}
+
+.pod-card {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: podAnimate 1s forwards 0.2s;
+}
+
+@keyframes podAnimate {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,220 @@
+.main-body {
+    width: 100%;
+    height: 100%;
+    padding: 5rem 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    border-radius: 4mm;
+    overflow: hidden;
+    opacity: 0;
+    animation: getVisible 1s forwards, boxShadow 0.3s forwards 0.4s;
+}
+
+.container .left-container,
+.right-container {
+    width: 50%;
+    padding: 2rem;
+    background: #0c0c1e;
+    color: #fff;
+    position: relative;
+}
+
+.left-container .content {
+    overflow: hidden;
+    margin: 3rem auto;
+    padding: 1.5rem 2rem;
+    height: 500px;
+    width: 90%;
+    position: relative;
+    transform: translateX(-500px);
+    animation: moveLeft 1s forwards 1s;
+}
+
+.left-container .content .head-cont p {
+    font-family: "Handlee", cursive;
+    font-size: 1.4rem;
+    line-height: 28px;
+    font-weight: 400;
+    animation: getVisible 0.6s forwards 1.5s;
+}
+
+
+.left-container .content .foot {
+    position: absolute;
+    bottom: 6%;
+    transform: translateY(100px);
+    animation: getUp 0.6s forwards 1.5s;
+}
+
+.left-container .foot h2
+{
+    margin: 0.4rem 0;
+}
+
+.left-container .foot p
+{
+    margin: 0.4rem 0;
+    opacity: 0.5;
+}
+
+.left-container .details {
+    opacity: 0;
+    animation: getVisible 1s forwards 1.5s;
+}
+.left-container .details p {
+    position: absolute;
+    margin: 0 1.5rem;
+    bottom: 5%;
+    line-height: 20px;
+    font-size: 15px;
+    width: 80%;
+    border: 0.1mm solid #fff;
+    border-radius: 3mm;
+    padding: 1rem;
+
+}
+
+.left-container .details p {
+    color: #F2963A;
+}
+
+.left-container .details p span {
+    display: grid;
+    padding-left: 4rem;
+}
+
+/* -----------------------right-container */
+
+.right-container .right-head .support {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.head-para {
+    text-align: center;
+}
+
+.right-head img {
+    position: absolute;
+    width: 200px;
+    top: 2%;
+    left: 25%;
+}
+
+.right-container .right-head .support h1 {
+    font-size: 4.5rem;
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: getVisible 0.6s forwards 1.1s;
+}
+
+.right-container .right-head .support p {
+    font-family: "Satisfy", sans-serif;
+    font-size: 2.5rem;
+    color: #F2963A;
+    position: absolute;
+    top: 40%;
+}
+
+.right-container .fgdfss {
+    margin-top: 1rem;
+    color: #fff;
+    text-align: center;
+    transform: translateY(-50px);
+    animation: getDown 0.6s forwards 1.5s;
+}
+
+.right-container .social {
+    overflow: hidden;
+    height: 270px;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(500px);
+    animation: moveLeft 1s forwards 1s;
+}
+
+.qr-code {
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2mm;
+    padding: 1rem;
+    width: 70%;
+    transform: translateY(350px);
+    animation: getUp 0.6s forwards 1.5s;
+}
+
+.qr-code img {
+    width: 150px;
+}
+
+.qr-code p {
+    padding: 1rem 1rem 0 1rem;
+    font-size: 14px;
+}
+
+
+/* ----------------------------animation---------------------------- */
+.main-body .container .left-container h1 {
+    transform: translateY(-110px);
+    animation: getDown 0.6s forwards 0.8s;
+}
+
+.right-container .social .social-links {
+    opacity: 0;
+    animation: getVisible 0.6s forwards 1.5s;
+}
+
+@keyframes getDown {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes getUp {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes getVisible {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes boxShadow {
+    to {
+        box-shadow: 0 4px 80px rgba(127, 61, 214, 0.6);
+    }
+}
+
+@keyframes moveLeft {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveRight {
+    to {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "heroSectionImage": "https://www.imageshine.in/uploads/gallery/Vector-colorful-modern-gradient-background-design.jpg"
+    },
+    {
+        "image": {
+            "default": "/src/assets/product_lists/product_5/product_5.1.jpg"
+        },
+        "name": "Gimbal Stabilizer",
+        "description": "Gimbal Stabilizer | 3-Axis Handheld Gimbal Stabilizer for Smartphone",
+        "newPrice": "Rs. 6999 Only /-",
+        "oldPrice": "Rs. 8999"
+    },
+    {
+    "image": {
+            "default": "/src/assets/product_lists/product_4/product_4.1.jpg"
+        },
+        "name": "Selfie Stick cum Tripod | 2 in 1",
+        "description": "Selfie Stick cum Tripod | 2 in 1 | Portable High quality with BT Remote.",
+        "newPrice": "Rs. 599 Only /-",
+        "oldPrice": "Rs. 649"
+    }
+]

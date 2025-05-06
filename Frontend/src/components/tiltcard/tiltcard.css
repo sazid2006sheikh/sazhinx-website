@@ -1,0 +1,8 @@
+.tilt-card {
+    transition: transform 0.1s ease, background 0.3s ease;
+    transform-style: preserve-3d;
+    will-change: transform, background;
+    cursor: pointer;
+    border-radius: 3mm;
+    border: 0.1mm solid #ffffff20;
+}
