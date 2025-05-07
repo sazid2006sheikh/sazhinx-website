@@ -54,7 +54,7 @@ export default function Box() {
 
 
             <img
-                src="./src/assets/landing_page_image/camera.png"
+                src="./public/assets/landing_page_image/camera.png"
                 alt="reload"
                 style={{ width: `${scale}%`, transition: "width 0.2s ease-out" }}
             />

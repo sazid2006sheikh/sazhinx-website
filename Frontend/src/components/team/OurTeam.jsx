@@ -3,21 +3,21 @@ import TiltCard from "../tiltcard/TiltCard";
 import "./team.css";
 
 // this image show only when no image is provided in the teamMembers image key
-const fallBackImage = "./src/assets/team-images/blank_image.avif";
+const fallBackImage = "./public/assets/team-images/blank_image.avif";
 
 const teamMembers = [
     {
         thought: "Building dreams with code and creative leadership daily.",
         name: "Sazid Sheikh",
         role: "Founder",
-        image: "./src/assets/team-images/sazid_sheikh.jpg",
+        image: "./public/assets/team-images/sazid_sheikh.jpg",
         reverse: false,
     },
     {
         thought: "Turning visions into reality with strategy and heart.",
         name: "Sachin Bhandary",
         role: "Co-Founder",
-        image: "./src/assets/team-images/sachin_bhandary.jpg",
+        image: "./public/assets/team-images/sachin_bhandary.jpg",
         reverse: true,
     },
     {
@@ -31,14 +31,14 @@ const teamMembers = [
         thought: "Growing brands with data, insights, and clear goals.",
         name: "Ankit Yadav",
         role: "Growth Manager",
-        image: "./src/assets/team-images/ankit_yadav.jpg",
+        image: "./public/assets/team-images/ankit_yadav.jpg",
         reverse: true,
     },
     {
         thought: "Connecting people through stories, trends, and design ideas.",
         name: "Ravinesh Kumar",
         role: "Marketing & Social Media Manager",
-        image: "./src/assets/team-images/ravinesh_kumar.jpg",
+        image: "./public/assets/team-images/ravinesh_kumar.jpg",
         reverse: false,
     },
 ];

@@ -4,28 +4,8 @@
     },
     {
         "image": {
-            "default": "/src/assets/herosection/prod-image/studio_card_1.png",
-            "hover": "/src/assets/herosection/prod-image/studio_card_2.png"
-        },
-        "name": "Studio Headphones",
-        "description": "High-quality sound for professionals.",
-        "newPrice": "Rs. 1400",
-        "oldPrice": "Rs. 1500"
-    },
-    {
-        "image": {
-            "default": "/src/assets/herosection/prod-image/studio_card_1.png",
-            "hover": "/src/assets/herosection/prod-image/studio_card_2.png"
-        },
-        "name": "Portable Speaker",
-        "description": "Compact speaker with rich sound.",
-        "newPrice": "Rs. 1200",
-        "oldPrice": "Rs. 1300"
-    },
-    {
-        "image": {
-            "default": "/src/assets/herosection/prod-image/studio_card_1.png",
-            "hover": "/src/assets/herosection/prod-image/studio_card_2.png"
+            "default": "/public/assets/herosection/prod-image/studio_card_1.png",
+            "hover": "/public/assets/herosection/prod-image/studio_card_2.png"
         },
         "name": "Wireless Mouse",
         "description": "Ergonomically designed for comfort.",
@@ -34,12 +14,22 @@
     },
     {
         "image": {
-            "default": "/src/assets/herosection/prod-image/studio_card_1.png",
-            "hover": "/src/assets/herosection/prod-image/studio_card_2.png"
+            "default": "/public/assets/herosection/prod-image/studio_card_1.png",
+            "hover": "/public/assets/herosection/prod-image/studio_card_2.png"
         },
-        "name": "Studio Headphones",
-        "description": "High-quality sound for professionals.",
-        "newPrice": "Rs. 1400",
-        "oldPrice": "Rs. 1500"
+        "name": "Wireless Mouse",
+        "description": "Ergonomically designed for comfort.",
+        "newPrice": "Rs. 800",
+        "oldPrice": "Rs. 900"
+    },
+    {
+        "image": {
+            "default": "/public/assets/herosection/prod-image/studio_card_1.png",
+            "hover": "/public/assets/herosection/prod-image/studio_card_2.png"
+        },
+        "name": "Wireless Mouse",
+        "description": "Ergonomically designed for comfort.",
+        "newPrice": "Rs. 800",
+        "oldPrice": "Rs. 900"
     }
 ]

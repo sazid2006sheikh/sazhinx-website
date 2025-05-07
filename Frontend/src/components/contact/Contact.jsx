@@ -40,7 +40,7 @@ function Contact() {
                     </TiltCard>
 
                     <TiltCard className="qr-code">
-                        <img src="./src/assets/landing_page_image/qr.jpeg" alt="Qr-code" />
+                        <img src="./public/assets/landing_page_image/qr.jpeg" alt="Qr-code" />
                         <p>Your Gateway to Everything</p>
                     </TiltCard>
                 </div>
