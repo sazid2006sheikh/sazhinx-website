@@ -28,7 +28,7 @@ function Contact() {
 
                 <div className="right-container">
                     <div className="right-head">
-                        <img src="./public/logo.png" alt="SAZHINX-logo" />
+                        <img src="./logo.png" alt="SAZHINX-logo" />
                         <div className="support">
                             <h1>THANK YOU <p>for your support</p></h1>
                         </div>
@@ -40,7 +40,7 @@ function Contact() {
                     </TiltCard>
 
                     <TiltCard className="qr-code">
-                        <img src="./public/assets/landing_page_image/qr.jpeg" alt="Qr-code" />
+                        <img src="./assets/landing_page_image/qr.jpeg" alt="Qr-code" />
                         <p>Your Gateway to Everything</p>
                     </TiltCard>
                 </div>

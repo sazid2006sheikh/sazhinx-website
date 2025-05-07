@@ -3,110 +3,110 @@ import "./productcollection.css";
 
 // main-products name use for products name, add product image inside the image,  use alt with product name
 const productData = [
-    { name: "Tripod", image: "./public/assets/product-image/product_image_1.jpg", alt: "product_image-tripod" },
-    { name: "Ring Light", image: "./public/assets/product-image/Ring_light.jpg", alt: "product_image-Ring_Light" },
-    { name: "Mic Stand", image: "./public/assets/product-image/mic_stand.png", alt: "product_image-micStand" },
-    { name: "Gimbal (Coming Soon)", image: "./public/assets/product-image/product_image_4.png", alt: "product_image-gimbal" },
-    { name: "Cables & Wires", image: "./public/assets/product-image/cables&wires.png", alt: "product_image-cables" },
-    { name: "Sockets and Extension", image: "./public/assets/product-image/product_image_6.jpg", alt: "product_image-sockets" },
-    { name: "Aesthtics (Coming Soon)", image: "./public/assets/product-image/product_image_7.png", alt: "product_image-plants" }
+    { name: "Tripod", image: "./assets/product-image/product_image_1.jpg", alt: "product_image-tripod" },
+    { name: "Ring Light", image: "./assets/product-image/Ring_light.jpg", alt: "product_image-Ring_Light" },
+    { name: "Mic Stand", image: "./assets/product-image/mic_stand.png", alt: "product_image-micStand" },
+    { name: "Gimbal (Coming Soon)", image: "./assets/product-image/product_image_4.png", alt: "product_image-gimbal" },
+    { name: "Cables & Wires", image: "./assets/product-image/cables&wires.png", alt: "product_image-cables" },
+    { name: "Sockets and Extension", image: "./assets/product-image/product_image_6.jpg", alt: "product_image-sockets" },
+    { name: "Aesthtics (Coming Soon)", image: "./assets/product-image/product_image_7.png", alt: "product_image-plants" }
     // add more if needed
 ];
 
 // list-of-all-products in this add main for head image, options for other 3 images, prices(previousPrice, newPrice), product-description
 const allProducts = [
     {
-        main: "./public/assets/product_lists/product_1/product_1.jpg",
+        main: "./assets/product_lists/product_1/product_1.jpg",
         options: [
-            "./public/assets/product_lists/product_1/product_1.1.jpg",
-            "./public/assets/product_lists/product_1/product_1.2.jpg",
-            "./public/assets/product_lists/product_1/product_1.3.jpg"
+            "./assets/product_lists/product_1/product_1.1.jpg",
+            "./assets/product_lists/product_1/product_1.2.jpg",
+            "./assets/product_lists/product_1/product_1.3.jpg"
         ],
         previousPrice: 349,
         newPrice: 299,
         description: "Flexible Tripod for Action Camera | Mobile - 360° Rotation",
     },
     {
-        main: "./public/assets/product_lists/product_2/product_2.jpg",
+        main: "./assets/product_lists/product_2/product_2.jpg",
         options: [
-            "./public/assets/product_lists/product_2/product_2.1.jpg",
-            "./public/assets/product_lists/product_2/product_2.2.jpg",
-            "./public/assets/product_lists/product_2/product_2.3.jpg"
+            "./assets/product_lists/product_2/product_2.1.jpg",
+            "./assets/product_lists/product_2/product_2.2.jpg",
+            "./assets/product_lists/product_2/product_2.3.jpg"
         ],
         previousPrice: 299,
         newPrice: 249,           
         description: "Mobile Holder | Metal Body | 720° Rotation",
     },
     {
-        main: "./public/assets/product_lists/product_3/product_3.jpg",
+        main: "./assets/product_lists/product_3/product_3.jpg",
         options: [
-            "./public/assets/product_lists/product_3/product_3.1.jpg",
-            "./public/assets/product_lists/product_3/product_3.2.jpg",
+            "./assets/product_lists/product_3/product_3.1.jpg",
+            "./assets/product_lists/product_3/product_3.2.jpg",
         ],
         previousPrice: 499,
         newPrice: 299,
         description: "Mobile Holder (1 Unit) | Ball mount | Premium Quality",
     },
     {
-        main: "./public/assets/product_lists/product_4/product_4.jpg",
+        main: "./assets/product_lists/product_4/product_4.jpg",
         options: [
-            "./public/assets/product_lists/product_4/product_4.1.jpg",
-            "./public/assets/product_lists/product_4/product_4.2.jpg",
-            "./public/assets/product_lists/product_4/product_4.3.webp"
+            "./assets/product_lists/product_4/product_4.1.jpg",
+            "./assets/product_lists/product_4/product_4.2.jpg",
+            "./assets/product_lists/product_4/product_4.3.webp"
         ],
         previousPrice: 649,
         newPrice: 599,
         description: "Selfie Stick cum Tripod | 2 in 1 | 1.5m Height",
     },
     {
-        main: "./public/assets/product_lists/product_5/product_5.jpg",
+        main: "./assets/product_lists/product_5/product_5.jpg",
         options: [
-            "./public/assets/product_lists/product_5/product_5.1.jpg",
-            "./public/assets/product_lists/product_5/product_5.2.jpg",
-            "./public/assets/product_lists/product_5/product_5.3.jpg"
+            "./assets/product_lists/product_5/product_5.1.jpg",
+            "./assets/product_lists/product_5/product_5.2.jpg",
+            "./assets/product_lists/product_5/product_5.3.jpg"
         ],
         previousPrice: 0,
         newPrice: 0,
         description: "Coming Soon"
     },
     {
-        main: "./public/assets/product_lists/product_6/product_6.jpg",
+        main: "./assets/product_lists/product_6/product_6.jpg",
         options: [
-            "./public/assets/product_lists/product_6/product_6.1.jpg",
-            "./public/assets/product_lists/product_6/product_6.2.jpg",
-            "./public/assets/product_lists/product_6/product_6.3.jpg"
+            "./assets/product_lists/product_6/product_6.1.jpg",
+            "./assets/product_lists/product_6/product_6.2.jpg",
+            "./assets/product_lists/product_6/product_6.3.jpg"
         ],
         previousPrice: 1499,
         newPrice: 1099,
         description: "Tripod | BL-5 Ft | Mobile & Camera | "
     },
     {
-        main: "./public/assets/product_lists/product_7/product_7.jpg",
+        main: "./assets/product_lists/product_7/product_7.jpg",
         options: [
-            "./public/assets/product_lists/product_7/product_7.1.webp",
-            "./public/assets/product_lists/product_7/product_7.2.jpg",
-            "./public/assets/product_lists/product_7/product_7.3.jpg"
+            "./assets/product_lists/product_7/product_7.1.webp",
+            "./assets/product_lists/product_7/product_7.2.jpg",
+            "./assets/product_lists/product_7/product_7.3.jpg"
         ],
         previousPrice: 1599,
         newPrice: 1199,
         description: "Ring light - 12-inch | LED | Stand Incl."
     },
     {
-        main: "./public/assets/product_lists/product_8/product_8.png",
+        main: "./assets/product_lists/product_8/product_8.png",
         options: [
-            "./public/assets/product_lists/product_8/product_8.1.jpg",
-            "./public/assets/product_lists/product_8/product_8.2.png",
+            "./assets/product_lists/product_8/product_8.1.jpg",
+            "./assets/product_lists/product_8/product_8.2.png",
         ],
         previousPrice: 12,
         newPrice: 10,
         description: "Gorilla Pod | Flexible Tripod | 360° Rotation"
     },
     {
-        main: "./public/assets/product_lists/product_9/product_9.jpg",
+        main: "./assets/product_lists/product_9/product_9.jpg",
         options: [
-            "./public/assets/product_lists/product_9/product_9.1.jpg",
-            "./public/assets/product_lists/product_9/product_9.2.jpg",
-            "./public/assets/product_lists/product_9/product_9.3.jpeg"
+            "./assets/product_lists/product_9/product_9.1.jpg",
+            "./assets/product_lists/product_9/product_9.2.jpg",
+            "./assets/product_lists/product_9/product_9.3.jpeg"
         ],
         previousPrice: 0,
         newPrice: 0,
@@ -119,41 +119,41 @@ const allProducts = [
 // video data, src used for source of videos, img used for product image, and add other details like discount, detail, newPrice, oldPrice
 const videoData = [
     {
-        src: "./public/assets/videos/cat.mp4",
+        src: "./assets/videos/cat.mp4",
         discount: "100% OFF",
-        img: "./public/assets/product-image/product_image_1.avif",
+        img: "./assets/product-image/product_image_1.avif",
         detail: "Coming Soon",
         newPrice: 399,
         previousPrice: 500
     },
     {
-        src: "./public/assets/videos/cat2.mp4",
+        src: "./assets/videos/cat2.mp4",
         discount: "100% OFF",
-        img: "./public/assets/product-image/product_image_1.avif",
+        img: "./assets/product-image/product_image_1.avif",
         detail: "Coming Soon",
         newPrice: 399,
         previousPrice: 500
     },
     {
-        src: "./public/assets/videos/cat.mp4",
+        src: "./assets/videos/cat.mp4",
         discount: "100% OFF",
-        img: "./public/assets/product-image/product_image_1.avif",
+        img: "./assets/product-image/product_image_1.avif",
         detail: "Coming Soon",
         newPrice: 399,
         previousPrice: 500
     },
     {
-        src: "./public/assets/videos/cat2.mp4",
+        src: "./assets/videos/cat2.mp4",
         discount: "100% OFF",
-        img: "./public/assets/product-image/product_image_1.avif",
+        img: "./assets/product-image/product_image_1.avif",
         detail: "Coming Soon",
         newPrice: 399,
         previousPrice: 500
     },
     {
-        src: "./public/assets/videos/cat.mp4",
+        src: "./assets/videos/cat.mp4",
         discount: "100% OFF",
-        img: "./public/assets/product-image/product_image_1.avif",
+        img: "./assets/product-image/product_image_1.avif",
         detail: "Coming Soon",
         newPrice: 0,
         previousPrice: 0

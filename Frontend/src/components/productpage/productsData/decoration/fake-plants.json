@@ -4,8 +4,8 @@
     },
     {
         "image": {
-            "default": "/public/assets/herosection/prod-image/studio_card_1.png",
-            "hover": "/public/assets/herosection/prod-image/studio_card_2.png"
+            "default": "/assets/herosection/prod-image/studio_card_1.png",
+            "hover": "/assets/herosection/prod-image/studio_card_2.png"
         },
         "name": "Studio Headphones",
         "description": "High-quality sound for professionals.",
@@ -14,8 +14,8 @@
     },
     {
         "image": {
-            "default": "/public/assets/herosection/prod-image/studio_card_1.png",
-            "hover": "/public/assets/herosection/prod-image/studio_card_2.png"
+            "default": "/assets/herosection/prod-image/studio_card_1.png",
+            "hover": "/assets/herosection/prod-image/studio_card_2.png"
         },
         "name": "Portable Speaker",
         "description": "Compact speaker with rich sound.",
@@ -24,8 +24,8 @@
     },
     {
         "image": {
-            "default": "/public/assets/herosection/prod-image/studio_card_1.png",
-            "hover": "/public/assets/herosection/prod-image/studio_card_2.png"
+            "default": "/assets/herosection/prod-image/studio_card_1.png",
+            "hover": "/assets/herosection/prod-image/studio_card_2.png"
         },
         "name": "Wireless Mouse",
         "description": "Ergonomically designed for comfort.",
@@ -34,8 +34,8 @@
     },
     {
         "image": {
-            "default": "/public/assets/herosection/prod-image/studio_card_1.png",
-            "hover": "/public/assets/herosection/prod-image/studio_card_2.png"
+            "default": "/assets/herosection/prod-image/studio_card_1.png",
+            "hover": "/assets/herosection/prod-image/studio_card_2.png"
         },
         "name": "Studio Headphones",
         "description": "High-quality sound for professionals.",

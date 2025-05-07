@@ -4,7 +4,7 @@
     },
     {
         "image": {
-            "default": "/public/assets/product_lists/product_5/product_5.1.jpg"
+            "default": "/assets/product_lists/product_5/product_5.1.jpg"
         },
         "name": "Gimbal Stabilizer",
         "description": "Gimbal Stabilizer | 3-Axis Handheld Gimbal Stabilizer for Smartphone",
@@ -13,7 +13,7 @@
     },
     {
     "image": {
-            "default": "/public/assets/product_lists/product_4/product_4.1.jpg"
+            "default": "/assets/product_lists/product_4/product_4.1.jpg"
         },
         "name": "Selfie Stick cum Tripod | 2 in 1",
         "description": "Selfie Stick cum Tripod | 2 in 1 | Portable High quality with BT Remote.",

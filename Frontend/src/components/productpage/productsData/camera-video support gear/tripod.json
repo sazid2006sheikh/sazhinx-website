@@ -4,7 +4,7 @@
     },
     {
         "image": {
-            "default": "/public/assets/product-image/product_image_1.jpg"
+            "default": "/assets/product-image/product_image_1.jpg"
         },
         "name": "Tripod",
         "description": "Tripod | High-quality Tripod | MOBILE & CAMERA | 5ft.",
@@ -13,7 +13,7 @@
     },
     {
         "image": {
-            "default": "/public/assets/product_lists/product_1/product_1.jpg"
+            "default": "/assets/product_lists/product_1/product_1.jpg"
         },
         "name": "Flexible Tripod",
         "description": "Flexible Tripod | Ulta flexible Design & 360 Degree Rotation.",
@@ -22,7 +22,7 @@
     },
     {
         "image": {
-            "default": "/public/assets/product_lists/product_4/product_4.1.jpg"
+            "default": "/assets/product_lists/product_4/product_4.1.jpg"
         },
         "name": "Selfie Stick cum Tripod | 2 in 1",
         "description": "Selfie Stick cum Tripod | 2 in 1 | Portable High quality with BT Remote.",
@@ -31,7 +31,7 @@
     },
     {
         "image": {
-            "default": "/public/assets/product_lists/laptop_stand.png"
+            "default": "/assets/product_lists/laptop_stand.png"
         },
         "name": "Laptop Stand",
         "description": "Laptop Stand | Adjustable & Portable | 6 Height Adjustable.",
@@ -40,7 +40,7 @@
     },
     {
         "image": {
-            "default": "/public/assets/product_lists/product_8/product_8.2.png"
+            "default": "/assets/product_lists/product_8/product_8.2.png"
         },
         "name": "Portable Speaker",
         "description": "Gorilla Pod Tripod | Flexible Tripod for all cameras.",

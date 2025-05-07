@@ -24,7 +24,7 @@ const CoverAnimation = ({ onFinish }) => {
             className={`cover-page ${animation ? 'start' : ''} `}>
             <div className="page-video">
                 <video autoPlay muted playsInline>
-                    <source src="./public/assets/coverpage/coverpage-video-warmtone.mp4" type='video/mp4' />
+                    <source src="/assets/coverpage/coverpage-video-warmtone.mp4" type='video/mp4' />
                 </video>
             </div>
             <div className="cover-content">
@@ -42,7 +42,7 @@ const CoverAnimation = ({ onFinish }) => {
                 </div>
             </div>
             <audio autoPlay loop>
-                    <source src="./public/openingmusic.mp3" type='audio/mp3' />
+                    <source src="/openingmusic.mp3" type='audio/mp3' />
             </audio>
         </div>
     );

@@ -4,8 +4,8 @@
     },
     {
         "image": {
-            "default": "/public/assets/herosection/prod-image/studio_card_1.png",
-            "hover": "/public/assets/herosection/prod-image/studio_card_2.png"
+            "default": "/assets/herosection/prod-image/studio_card_1.png",
+            "hover": "/assets/herosection/prod-image/studio_card_2.png"
         },
         "name": "Wireless Mouse",
         "description": "Ergonomically designed for comfort.",
@@ -14,8 +14,8 @@
     },
     {
         "image": {
-            "default": "/public/assets/herosection/prod-image/studio_card_1.png",
-            "hover": "/public/assets/herosection/prod-image/studio_card_2.png"
+            "default": "/assets/herosection/prod-image/studio_card_1.png",
+            "hover": "/assets/herosection/prod-image/studio_card_2.png"
         },
         "name": "Wireless Mouse",
         "description": "Ergonomically designed for comfort.",
@@ -24,8 +24,8 @@
     },
     {
         "image": {
-            "default": "/public/assets/herosection/prod-image/studio_card_1.png",
-            "hover": "/public/assets/herosection/prod-image/studio_card_2.png"
+            "default": "/assets/herosection/prod-image/studio_card_1.png",
+            "hover": "/assets/herosection/prod-image/studio_card_2.png"
         },
         "name": "Wireless Mouse",
         "description": "Ergonomically designed for comfort.",

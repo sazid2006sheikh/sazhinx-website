@@ -4,23 +4,23 @@ import { Sendbtn } from '../btn/Button.jsx';
 
 // images in the card
 const image = [ 
-    "./public/assets/herosection/prod-image/studio_card_1.png",
-    "./public/assets/herosection/prod-image/studio_card_2.png",
-    "./public/assets/herosection/prod-image/studio_card_3.png",
-    "./public/assets/herosection/prod-image/studio_card_4.png",
-    "./public/assets/herosection/prod-image/studio_card_5.png",
-    "./public/assets/herosection/prod-image/studio_card_6.png",
-    "./public/assets/herosection/prod-image/studio_card_7.png",
-    "./public/assets/herosection/prod-image/studio_card_8.jpeg",
-    "./public/assets/herosection/prod-image/studio_card_9.jpeg",
-    "./public/assets/herosection/prod-image/studio_card_10.jpg",
+    "./assets/herosection/prod-image/studio_card_1.png",
+    "./assets/herosection/prod-image/studio_card_2.png",
+    "./assets/herosection/prod-image/studio_card_3.png",
+    "./assets/herosection/prod-image/studio_card_4.png",
+    "./assets/herosection/prod-image/studio_card_5.png",
+    "./assets/herosection/prod-image/studio_card_6.png",
+    "./assets/herosection/prod-image/studio_card_7.png",
+    "./assets/herosection/prod-image/studio_card_8.jpeg",
+    "./assets/herosection/prod-image/studio_card_9.jpeg",
+    "./assets/herosection/prod-image/studio_card_10.jpg",
 ];
 
 // advertised image
 const advertiseImages = [
-    "./public/assets/herosection/advertisements/add-img-1.png",
-    "./public/assets/herosection/advertisements/add-img-2.png",
-    "./public/assets/herosection/advertisements/add-img-3.png",
+    "./assets/herosection/advertisements/add-img-1.png",
+    "./assets/herosection/advertisements/add-img-2.png",
+    "./assets/herosection/advertisements/add-img-3.png",
 ];
 
 const HeroSection = () => {

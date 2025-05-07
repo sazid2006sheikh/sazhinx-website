@@ -21,35 +21,35 @@ export default function Testimonial() {
 
     const cards = [
         {
-            image: "./public/assets/reviewers/person_1.avif",
+            image: "./assets/reviewers/person_1.avif",
             name: "Rashmika Sika",
             city: "Delhi",
             text: "Absolutely love the quality! The attention to detail and packaging felt so premium. This isn’t just merch — it's an experience.",
             ratingValue: 4
         },
         {
-            image: "./public/assets/reviewers/xyz.jpg",
+            image: "./assets/reviewers/xyz.jpg",
             name: "Subham Singh",
             city: "Kanpur",
             text: "As a creator, I’m super picky about design. SazhinX nailed the aesthetic. Lighting setup are too good.",
             ratingValue: 5
         },
         {
-            image: "./public/assets/reviewers/p3.jpg",
+            image: "./assets/reviewers/p3.jpg",
             name: "Abhishek Gupta",
             city: "Ghaziabad",
             text: "Perfect blend of comfort and creativity. This is what every modern creator brand should strive for.",
             ratingValue: 4
         },
         {
-            image: "./public/assets/reviewers/p4.jpg",
+            image: "./assets/reviewers/p4.jpg",
             name: "Sonu Sharma",
             city: "Noida",
             text: "Nice Product & Services, price is high but it's affordable enough for beginners.",
             ratingValue: 3
         },
         {
-            image: "./public/assets/reviewers/person_5.jpg",
+            image: "./assets/reviewers/person_5.jpg",
             name: "Parmeet Kaur",
             city: "Faridabad",
             text: "I loved your Tripods & Key lights. Totally Worth it, High Quality.",
