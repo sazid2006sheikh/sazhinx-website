@@ -8,6 +8,79 @@ import { Sendbtn, Contactbtn } from "../btn/Button.jsx";
 const Navbar = () => {
   const caretStyle = { color: "#F2963A" };
 
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
+  const productsRef = useRef();
+  // const toggleProductsDropdown = () => setProductsDropdownOpen(prev => !prev);
+
+  const [genreDropdownOpen, setGenreDropdownOpen] = useState(false);
+  const genreRef = useRef();
+  // const toggleGenreDropdown = () => setGenreDropdownOpen(prev => !prev);
+
+  const toggleProductsDropdown = () => {
+    if (productsDropdownOpen) {
+      if (productsRef.current) {
+        productsRef.current.classList.remove("menu-open");
+        productsRef.current.classList.add("menu-closing");
+      }
+      setTimeout(() => {
+        setProductsDropdownOpen(false);
+        if (productsRef.current) {
+          productsRef.current.classList.remove("menu-closing");
+        }
+      }, 300);
+    } else {
+      if (genreDropdownOpen) {
+        if (genreRef.current) {
+          genreRef.current.classList.remove("menu-open");
+          genreRef.current.classList.add("menu-closing");
+        }
+        setTimeout(() => {
+          setGenreDropdownOpen(false);
+          if (genreRef.current) {
+            genreRef.current.classList.remove("menu-closing");
+          }
+          setProductsDropdownOpen(true);
+        }, 300);
+      } else {
+        setProductsDropdownOpen(true);
+      }
+    }
+  };
+
+  const toggleGenreDropdown = () => {
+    if (genreDropdownOpen) {
+      if (genreRef.current) {
+        genreRef.current.classList.remove("menu-open");
+        genreRef.current.classList.add("menu-closing");
+      }
+      setTimeout(() => {
+        setGenreDropdownOpen(false);
+        if (genreRef.current) {
+          genreRef.current.classList.remove("menu-closing");
+        }
+      }, 300);
+    } else {
+      if (productsDropdownOpen) {
+        if (productsRef.current) {
+          productsRef.current.classList.remove("menu-open");
+          productsRef.current.classList.add("menu-closing");
+        }
+        setTimeout(() => {
+          setProductsDropdownOpen(false);
+          if (productsRef.current) {
+            productsRef.current.classList.remove("menu-closing");
+          }
+          setGenreDropdownOpen(true);
+        }, 300);
+      } else {
+        setGenreDropdownOpen(true);
+      }
+    }
+  };
+
   return (
     <header>
       <nav className="navbar">
@@ -20,15 +93,19 @@ const Navbar = () => {
           </div>
 
           {/* Navigation List */}
-          <ul className="nav-list">
+          <ul className={`nav-list ${menuOpen ? "show-menu" : ""}`}>
             {/* Dropdown: Products */}
-            <li className="drop-down-products-list">
-              <span>
+
+            <button className='Xmark' onClick={() => setMenuOpen(false)}><i className="fa-solid fa-xmark"></i></button>
+
+            {/* Products Dropdown */}
+            <li className={`drop-down-products-list ${productsDropdownOpen ? 'active' : ''}`}>
+              <span onClick={toggleProductsDropdown}>
                 Products <i className="fa-solid fa-caret-up caret-icon"></i>
               </span>
 
-              {/* Dropdown Content */}
-              <ul className="list-heading">
+              <ul ref={productsRef} className={`list-heading ${productsDropdownOpen ? "menu-open" : ""}`}>
+                <span className='back-button' onClick={toggleProductsDropdown}><i className="fa-solid fa-caret-right"></i> Products</span>
                 {[
                   {
                     title: "Camera & Video Support Gear",
@@ -57,6 +134,7 @@ const Navbar = () => {
                       <i className="fa-solid fa-caret-right caret-icon" style={caretStyle}></i>
                     </span>
                     <ul className="list-items">
+                      {/* <i className="fa-solid fa-caret-right"></i> */}
                       {section.items.map((item, i) => (
                         <li key={i}>
                           <Link to={`/category/${item.replace(/\s+/g, '-').toLowerCase()}`} className="color">{item}</Link>
@@ -71,8 +149,13 @@ const Navbar = () => {
             {/* Other Links */}
             <li><Link to="/support" href="#">Support</Link></li>
             <li><Link to="/gallery" href="#">Gallery</Link></li>
-            <li className='drop-down-products-list'><span>Shop By Genre <i className="fa-solid fa-caret-up caret-icon"></i></span>
-              <ul className="list-heading">
+
+            {/* genre dropdown */}
+            <li className={`drop-down-products-list ${genreDropdownOpen ? 'active' : ''}`}>
+              <span onClick={toggleGenreDropdown}>Shop By Genre <i className="fa-solid fa-caret-up caret-icon"></i></span>
+
+              <ul ref={genreRef} className={`list-heading ${genreDropdownOpen ? "menu-open" : ""}`}>
+                <span className='back-button' onClick={toggleGenreDropdown}><i className="fa-solid fa-caret-right"></i> Shop By Genre</span>
                 {[
                   "Content Creation Kits",
                   "Home Studio Setup",
@@ -90,7 +173,8 @@ const Navbar = () => {
 
         {/* Register Button */}
         {/* <RegisterBtn /> */} {/*not is use*/}
-        <Contactbtn />
+        <Contactbtn className="btn-media-query-style" />
+        <span className="material-symbols-outlined" onClick={toggleMenu}>menu</span>
       </nav>
     </header>
   );

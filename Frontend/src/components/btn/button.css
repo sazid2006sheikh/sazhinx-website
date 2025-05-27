@@ -1,15 +1,46 @@
 /* BUTTON STYLE */
 .btn-style {
-    padding: 0.75rem 1.5rem;
-    font-size: 15.8px;
-    color: #000;
-    border: none;
-    border-radius: 5mm;
-    background-color: #fff;
-    text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 15.8px;
+  font-weight: 600;
+  color: #000;
+  border: none;
+  border-radius: 5mm;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.btn-style:hover {
+  background-color: #161616;
+  color: #fff;
+}
+
+.btn-media-query-style-logo {
+  display: none;
+}
+
+@media (max-width:1160px) {
+  .btn-media-query-style {
+    font-size: 13px;
+    padding: 0.55rem 1.2rem;
   }
-  
-  .btn-style:hover {
-    background-color: #161616;
-    color: #fff;
+}
+
+@media (max-width:892px) {
+  .btn-media-query-style {
+    margin-right: 2rem;
   }
+}
+
+@media (max-width:750px) {
+  .btn-media-query-style {
+    display: none;
+  }
+
+  .btn-media-query-style-logo {
+    display: block;
+    font-size: 13px;
+    padding: 0.55rem .9rem;
+    margin-right: 1rem;
+  }
+}

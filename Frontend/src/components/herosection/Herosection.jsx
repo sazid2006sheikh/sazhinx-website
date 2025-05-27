@@ -3,18 +3,18 @@ import './herosection.css';
 import { Sendbtn } from '../btn/Button.jsx';
 
 // images in the card
-const image = [ 
-    "./assets/herosection/prod-image/studio_card_1.png",
-    "./assets/herosection/prod-image/studio_card_2.png",
-    "./assets/herosection/prod-image/studio_card_3.png",
-    "./assets/herosection/prod-image/studio_card_4.png",
-    "./assets/herosection/prod-image/studio_card_5.png",
-    "./assets/herosection/prod-image/studio_card_6.png",
-    "./assets/herosection/prod-image/studio_card_7.png",
-    "./assets/herosection/prod-image/studio_card_8.jpeg",
-    "./assets/herosection/prod-image/studio_card_9.jpeg",
-    "./assets/herosection/prod-image/studio_card_10.jpg",
-];
+// const image = [ 
+//     "./assets/herosection/prod-image/studio_card_1.png",
+//     "./assets/herosection/prod-image/studio_card_2.png",
+//     "./assets/herosection/prod-image/studio_card_3.png",
+//     "./assets/herosection/prod-image/studio_card_4.png",
+//     "./assets/herosection/prod-image/studio_card_5.png",
+//     "./assets/herosection/prod-image/studio_card_6.png",
+//     "./assets/herosection/prod-image/studio_card_7.png",
+//     "./assets/herosection/prod-image/studio_card_8.jpeg",
+//     "./assets/herosection/prod-image/studio_card_9.jpeg",
+//     "./assets/herosection/prod-image/studio_card_10.jpg",
+// ];
 
 // advertised image
 const advertiseImages = [
@@ -24,12 +24,13 @@ const advertiseImages = [
 ];
 
 const HeroSection = () => {
-    const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Can be card objects later
-    const cardWidth = 320; // Width + gap
-    const visibleCards = 2; // Number of cards visible at once
-    const maxOffset = -(cardWidth * (cards.length - visibleCards));
+    // const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Can be card objects later
+    // const cardWidth = 320; // Width + gap
+    // const visibleCards = 2; // Number of cards visible at once
+    // const maxOffset = -(cardWidth * (cards.length - visibleCards));
 
-    const [offset, setOffset] = useState(0);
+    // const [offset, setOffset] = useState(0);
+    
     const [pushBack, setPushBack] = useState(false);
     const pushBackRef = useRef(null);
 
@@ -78,7 +79,9 @@ const HeroSection = () => {
         // main-container
         <div
             ref={pushBackRef}
-            className={`welcome-container-brand ${pushBack ? "fade-out" : ""}`}>
+            className={`welcome-container-brand ${pushBack ? "fade-out" : ""}`}
+            // className="welcome-container-brand"
+            >
 
             <div className="hero-container">
                 {/* right-side-container */}

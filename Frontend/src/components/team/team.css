@@ -1,9 +1,10 @@
 .team-main-container {
     width: 100%;
-    height: 750px;
+    min-height: 750px;
     background: #000;
     padding: 5rem;
     display: flex;
+    margin: 0 0 12rem 0;
 }
 
 .headline {
@@ -20,6 +21,7 @@
     margin: 0 auto;
     padding-bottom: 5rem;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 2.5rem;
     overflow: hidden scroll;
@@ -79,7 +81,7 @@
     left: 100%;
     transform: translateY(-50%);
     width: 170px;
-    height: 2px;
+    height: 1px;
     background-color: white;
 }
 
@@ -156,4 +158,92 @@
 .team-card-cont.pop {
     opacity: 1;
     transform: scale(1);
+}
+
+@media (max-width:1478px) {
+    .team-container .person-details {
+        margin: 2rem 6rem 0;
+    }
+}
+
+@media (max-width:1318px) {
+    .team-card-cont {
+        align-items: center;
+    }
+
+    .person-details .person-content {
+        display: none;
+    }
+
+    .team-container .person-details {
+        min-width: 200px;
+        height: 80px;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width:900px) {
+    .team-container .person-details {
+        margin: 2rem 2rem 0;
+    }
+}
+
+@media (max-width:750px) {
+    .team-main-container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .team-container {
+        padding-right: 0;
+    }
+}
+
+@media (max-width:715px) {
+    .team-container .person-image {
+        height: 120px;
+        width: 120px;
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width:615px) {
+    .team-main-container {
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+    }
+
+    .team-container .person-details {
+        min-width: 150px;
+        height: 80px;
+        padding: 1.2rem;
+    }
+
+    .team-container .person-image::after {
+        width: 0;
+    }
+
+    .team-container .person-details {
+        position: absolute;
+        top: 90%;
+    }
+
+    .team-card-cont {
+        gap: 12.5rem;
+        align-items: center;
+    }
+
+    .team-container .person-details {
+        padding: 1rem 0.5rem;
+    }
+
+    .team-container .person-name p span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:440px) {
+    .team-card-cont {
+        align-items: start;
+    }
 }

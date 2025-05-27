@@ -36,18 +36,13 @@ export default function Box() {
             <h1 style={{
                 opacity,
                 transform: `translateY(-50%) scale(${0.8 + opacity * 0.2})`,
-                transition: "opacity 1s ease, transform 1s ease",
-                position: "absolute",
-                top: "50%",
-                left: "50%",
+                transition: "opacity 1s ease, transform 1s ease",                
                 textAlign: "center",
                 color: "#fff",
-                fontSize: "4.8rem",
                 zIndex: 1,
-                lineHeight: "1"
             }}>
                 SazhinX.com<br />
-                <span style={{ fontSize: "1.8rem", letterSpacing: "2px" }}>
+                <span>
                     Where Ideas Take Form
                 </span>
             </h1>

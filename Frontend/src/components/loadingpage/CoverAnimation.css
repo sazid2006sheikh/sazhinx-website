@@ -13,12 +13,12 @@
     opacity: 0;
     visibility: visible;
     transition: transform 0.1s ease-out;
-    border-bottom: 0.8mm solid rgb(255, 255, 255);
 }
 
-audio{
+audio {
     display: none;
 }
+
 .cover-page.start {
     opacity: 1;
     animation: fadeOut 1.3s ease 3.9s forwards;
@@ -63,6 +63,10 @@ audio{
     font-size: 1.5rem;
     opacity: 0;
     font-family: monospace, sans-serif;
+}
+
+.cover-subtitle br {
+    display: none;
 }
 
 .cover-page.start .cover-subtitle {
@@ -138,8 +142,6 @@ audio{
 @keyframes fadeOut {
     to {
         visibility: hidden;
-        /* transform: translateY(-980px); */
-        /* adjust if needed */
         transform: scale(40.5);
     }
 }
@@ -164,5 +166,100 @@ audio{
     to {
         opacity: 0;
         transform: translateY(80px);
+    }
+}
+
+/* ----------------------------media queries---------------------------- */
+@media (max-width:1230px) {
+    .typewriter-text {
+        font-size: 3rem;
+    }
+
+    .cover-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:1060px) {
+    .typewriter-text {
+        font-size: 2.5rem;
+    }
+
+    .cover-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:900px) {
+    .typewriter-text {
+        font-size: 2rem;
+    }
+
+    .cover-subtitle br {
+        display: block;
+    }
+
+    .cover-subtitle {
+        text-align: center;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width:730px) {
+    .typewriter-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:565px) {
+    .typewriter-text {
+        font-size: 1.2rem;
+    }
+
+    .cover-subtitle {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+}
+
+@media (max-width:460px) {
+    .typewriter-text {
+        font-size: 0.95rem;
+    }
+
+    .cover-subtitle {
+        margin-top: 0.5rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+}
+
+@media (max-width:375px) {
+    .typewriter-text {
+        font-size: 0.75rem;
+    }
+
+    .cover-subtitle {
+        margin-top: 0.5rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+}
+
+@media (min-height:750px) {
+    .cover-page .cover-content .link {
+        bottom: -270px;
+    }
+}
+
+@media (min-height:820px) {
+    .cover-page .cover-content .link {
+        bottom: -330px;
+    }
+}
+
+@media (min-height:990px) {
+    .cover-page .cover-content .link {
+        bottom: -410px;
     }
 }

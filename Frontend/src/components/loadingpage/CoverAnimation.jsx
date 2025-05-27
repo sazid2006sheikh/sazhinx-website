@@ -32,7 +32,7 @@ const CoverAnimation = ({ onFinish }) => {
                     <span className="typewriter-text">UNLEASH YOUR CREATIVE POWER</span>
                 </h1>
 
-                <p className="cover-subtitle">Welcome to SazhinX Studio Gear — where Creativity meets Cinematography.</p>
+                <p className="cover-subtitle">Welcome to SazhinX Studio Gear — <br /> where Creativity meets Cinematography.</p>
                 
                 <div className="link">
                     <a href="https://www.instagram.com/sazhinx.01/">

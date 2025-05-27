@@ -50,7 +50,7 @@ export default function Footer() {
             >
                 <TiltCard className="content">
                     <p className="typewriter">
-                        Subscribe Our Newsletter
+                        Subscribe <span> Our Newsletter</span>
                     </p>
                     <div className='sign-in-container'>
                         <form action="#" className='form-wrapper'>

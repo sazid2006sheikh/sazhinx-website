@@ -11,7 +11,8 @@ export const Sendbtn = () => {
 export const Contactbtn = () => {
     return (
       <div>
-        <Link to="/contact" className="btn-style">Contact us</Link>
+        <Link to="/contact" className="btn-style btn-media-query-style">Contact us</Link>
+        <Link to="/contact" className="btn-style btn-media-query-style-logo"><i className="fa-solid fa-phone"></i></Link>
       </div>
     );
   };
