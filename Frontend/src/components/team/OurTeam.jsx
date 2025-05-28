@@ -28,13 +28,6 @@ const teamMembers = [
         reverse: false,
     },
     {
-        thought: "Growing brands with data, insights, and clear goals.",
-        name: "Ankit Yadav",
-        role: "Growth Manager",
-        image: "./assets/team-images/ankit_yadav.jpg",
-        reverse: true,
-    },
-    {
         thought: "Connecting people through stories, trends, and design ideas.",
         name: "Ravinesh Kumar",
         role: "Marketing & Social Media Manager",
