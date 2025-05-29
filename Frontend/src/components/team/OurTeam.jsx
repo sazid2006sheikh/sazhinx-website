@@ -24,7 +24,7 @@ const teamMembers = [
         thought: "Crafting seamless code to power your digital experience.",
         name: "Rishabh Prajapati",
         role: "Developer",
-        image: "",
+        image: "./assets/team-images/rishabh.jpg",
         reverse: false,
     },
     {
@@ -32,7 +32,7 @@ const teamMembers = [
         name: "Ravinesh Kumar",
         role: "Marketing & Social Media Manager",
         image: "./assets/team-images/ravinesh_kumar.jpg",
-        reverse: false,
+        reverse: true,
     },
 ];
 

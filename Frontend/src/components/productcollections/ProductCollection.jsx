@@ -97,8 +97,8 @@ const allProducts = [
             "./assets/product_lists/product_8/product_8.1.jpg",
             "./assets/product_lists/product_8/product_8.2.png",
         ],
-        previousPrice: 12,
-        newPrice: 10,
+        previousPrice:299,
+        newPrice: 279,
         description: "Gorilla Pod | Flexible Tripod | 360° Rotation"
     },
     {

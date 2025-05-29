@@ -35,7 +35,7 @@ function LandingPage() {
       <Box />
       <Testimonial />
       <Faq />
-      <OurTeam />
+      {/* <OurTeam /> */}
       <Footer />
       {/* <Trusties /> */}
     </>
