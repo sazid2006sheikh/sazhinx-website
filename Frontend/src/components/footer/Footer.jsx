@@ -80,7 +80,7 @@ export default function Footer() {
             <div className={`copyright-cont ${animateCard ? 'move-upward' : ''}`}>
                 <p className="copyright">
                     Copyright <i className="fa-solid fa-copyright"></i> 2025
-                    SAZHINX Studio Gear. All Rights Reserved.
+                    Sazhinx.com | All Rights Reserved.
                 </p>
             </div>
 
@@ -98,7 +98,7 @@ export default function Footer() {
                 ref={brandNameRef}
                 className={`footer-bottom-brand-name ${animateBrand ? 'animate' : ''}`}
             >
-                {"SAZHNIX".split("").map((char, i) => (
+                {"SAZHINX".split("").map((char, i) => (
                     <h1 key={i}>{char}</h1>
                 ))}
             </div>
