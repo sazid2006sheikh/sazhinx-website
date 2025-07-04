@@ -87,7 +87,7 @@ const HeroSection = () => {
                 {/* right-side-container */}
                 <div className="right-side-container">
                     <div className="content">
-                        <h1>Sazhin<span>X</span><br /><span>Studio Gear</span></h1>
+                         <h1>Crafting Creators<span> with passion</span></h1>
                         <p>Your vision deserves more than average tools.<br />Explore elite-grade gear made for creators who don't
                             compromise.</p>
                     </div>

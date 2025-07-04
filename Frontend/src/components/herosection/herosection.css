@@ -77,18 +77,18 @@
 
 .right-side-container {
     width: auto;
-    /* height: 100%; */
-    position: absolute;
+    height: 100%;
+    /* position: absolute; */
     top: 40%;
     right: 4%;
     z-index: 2;
 }
 
 /* "waste" remove it */
-/* .right-side-container {
+.right-side-container {
     padding-top: 10rem;
     padding-left: 40rem;
-} */
+}
 
 .right-side-container .content {
     margin-left: 10rem;
@@ -97,18 +97,14 @@
 .right-side-container .content h1 {
     padding-bottom: 2rem;
     line-height: 4rem;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "Exo 2", sans-serif;
 }
 
-.right-side-container .content h1 span:nth-of-type(1) {
-    font-size: 6.8rem;
-}
-
-.right-side-container .content h1 span:nth-of-type(2) {
-    font-weight: 400;
+.right-side-container .content h1 span {
     font-size: 3rem;
 }
+
 
 .right-side-container .content p {
     font-size: 18px;
